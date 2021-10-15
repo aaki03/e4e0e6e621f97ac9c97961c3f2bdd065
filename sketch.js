@@ -95,38 +95,21 @@ function draw() {
 
 function mouseDragged()
 {
-	Matter.Body.setPosition(stoneObj.body, {x:mouseX, y:mouseY}) 
+	
 }
 
 function mouseReleased()
 {
-	launcherObject.fly();
-    // distance=int(dist(stoneObj.x,stoneObj.y,mango1.x,mango1.y));
+	
+    
 }
 
 function keyPressed() {
-	if (keyCode === 32) {
-    Matter.Body.setPosition(stoneObj.body, {x:235, y:420}) 
-	  launcherObject.attach(stoneObj.body);
-	}
+	
   }
 
   function detectollision(lstone,lmango){
-	/*var collision = Matter.SAT.collides(lstone,lmango);
-	if(collision.collided){
-		console.log("collided");
-		Matter.Body.setStatic(lmango,false);	
-	}*/
-  mangoBodyPosition=lmango.body.position
-  stoneBodyPosition=lstone.body.position
-  
-  var distance=dist(stoneBodyPosition.x, stoneBodyPosition.y, mangoBodyPosition.x, mangoBodyPosition.y)
-  //console.log(distance)
- // console.log(lmango.r+lstone.r)
-  	if(distance<=lmango.r+lstone.r)
-    {
-      //console.log(distance);
-  	  Matter.Body.setStatic(lmango.body,false);
-    }
+	
+ 
 
   }
